@@ -20,7 +20,9 @@
     </aside>
     <section class="workspace">
       <div class="editor-head"><span id="activeName">Welcome</span><div><button id="previewBtn">Preview</button><button id="renameBtn">Rename</button><button id="deleteBtn">Delete</button></div></div>
+      <div class="runbar"><button id="connectBtn">Connect Termux</button><span id="backendState">Browser mode</span><select id="runtime" aria-label="Runtime"><option value="python">Python</option><option value="node">Node.js</option><option value="php">PHP</option></select><button id="saveTermuxBtn" disabled>Save to Termux</button><button id="runBtn" disabled>▶ Run</button></div>
       <textarea id="editor" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="Code editor" placeholder="Start writing code..."></textarea>
+      <section class="console-wrap" id="consoleWrap"><div class="preview-head"><strong>Run Output</strong><button id="clearConsole">Clear</button></div><pre id="consoleOutput">Connect to Termux to run Python, Node.js, or PHP.</pre></section>
       <section class="preview-wrap"><div class="preview-head"><strong>HTML Preview</strong><button id="closePreview">Hide</button></div><iframe id="preview" title="HTML preview" sandbox="allow-scripts"></iframe></section>
     </section>
   </main>
