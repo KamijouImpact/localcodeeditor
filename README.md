@@ -13,7 +13,9 @@ bash termux-setup.sh
 python server.py
 ```
 
-Open **http://127.0.0.1:8765** in the same device browser and tap **Connect Termux**. The Run panel supports Python, Node.js, and PHP when installed. Use **Save to Termux** to write the current editor contents into the project folder.
+Open **http://127.0.0.1:8765** in the same device browser and tap **Connect Termux**. The Termux file selector can refresh and open existing files from the project folder. **Save to Termux** writes the active file back to its original relative path (or its filename for a browser-only file).
+
+The Run panel supports Python, Node.js, and PHP when installed. Choose a runtime and tap **Run** to execute the editor contents.
 
 ## Security and limitations
 - The API binds only to `127.0.0.1`; do not expose it to a public network.
